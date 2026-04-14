@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" fill="none">
+  <!-- Moto esportiva minimalista -->
+  <g stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Roda traseira -->
+    <circle cx="22" cy="52" r="12" />
+    <circle cx="22" cy="52" r="4" />
+
+    <!-- Roda dianteira -->
+    <circle cx="72" cy="52" r="12" />
+    <circle cx="72" cy="52" r="4" />
+
+    <!-- Quadro / chassi -->
+    <path d="M34 52 L44 28 L62 28 L72 40" />
+
+    <!-- Carenagem esportiva -->
+    <path d="M44 28 L30 32 L34 52" />
+    <path d="M30 32 L24 28 L44 28" />
+
+    <!-- Tanque -->
+    <path d="M44 28 L54 24 L62 28" />
+
+    <!-- Rabeta esportiva -->
+    <path d="M62 28 L70 22" />
+
+    <!-- Guidão -->
+    <path d="M70 22 L76 20" />
+
+    <!-- Escapamento -->
+    <path d="M34 52 L42 48 L58 48 L72 52" />
+
+    <!-- Balança traseira -->
+    <path d="M44 28 L22 52" />
+  </g>
+
+  <!-- Texto MotoGarage -->
+  <text x="100" y="50" font-family="'Inter', 'Open Sans', Arial, sans-serif" font-size="30" font-weight="300" letter-spacing="1">
+    <tspan fill="#ffffff">Moto</tspan><tspan fill="#f59e0b" font-weight="700">Garage</tspan>
+  </text>
+</svg>

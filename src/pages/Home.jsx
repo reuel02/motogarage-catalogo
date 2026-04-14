@@ -1,6 +1,8 @@
 import About from "../components/About";
 import CardMoto from "../components/CardMoto";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Contato from "../components/Contato"
 import { useEffect, useState } from "react"
 
 export default function Home() {
@@ -32,7 +34,8 @@ export default function Home() {
     }
 
     return (
-        <div className="bg-zinc-950 min-h-dvh">
+        // { Container inteiro da pagina}
+        <div className="bg-bg-primary min-h-dvh">
             <Header />
 
             {/* Container principal limitando a largura máxima da tela */}
@@ -40,12 +43,13 @@ export default function Home() {
 
                 <About />
 
-                {/* Container do select alinhado à esquerda (start) */}
-                <div className="flex justify-start mb-6">
-                    <select
+                <section id="catalogo" className="pt-20">
+                    {/* Container do select alinhado à esquerda (start) */}
+                    <div className="flex justify-start mb-6">
+                        <select
                         value={filtro}
                         onChange={(evento) => setFiltro(evento.target.value)}
-                        className="bg-zinc-900 border border-zinc-700 text-zinc-300 py-2 px-4 rounded-md focus:outline-none focus:border-amber-500 cursor-pointer"
+                        className="bg-bg-secondary border border-border-hover text-text-input py-2 px-4 rounded-md focus:outline-none focus:border-accent cursor-pointer"
                     >
                         <option value="Todas">Filtrar por (Todas)</option>
                         <option value="Esportiva">Esportiva</option>
@@ -61,6 +65,11 @@ export default function Home() {
                         <CardMoto key={moto.id} moto={moto} />
                     ))}
                 </div>
+                </section>
+
+                <Contato />
+
+                <Footer />
             </main>
         </div>
     )
